@@ -1,0 +1,31 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+}
+
+#info {
+    position: relative;
+    margin: 50px;
+    width: 250px;
+    padding: 5px;
+    border: 10px;
+    background-color: rgb(160, 69, 221);
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+p {
+    transform: translateZ(0);
+}
+
+#whoami:hover, #info:hover {
+    -webkit-transform: scale(1.05);
+    transition: 0.2s;
+}

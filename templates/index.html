@@ -2,10 +2,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}" >
     <title>HELLO WORLD</title>
 </head>
 <body>
-    <h1>First Page</h1>
+    <h1 id="whoami"> < whoami > </h1>
+    
+    <div id="info">
+        <p>Name: Fabrice Fouron</p>
+        <p>School: Wentworth Institute of Technology</p>
+        <p>Interests: Track and Field, Volleyball</p>   
+    </div>
 
 </body>
 </html>
