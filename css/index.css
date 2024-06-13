@@ -1,9 +1,4 @@
-/* body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: bisque;
-} */
+
 html {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: rgb(145, 112, 99);
@@ -15,9 +10,9 @@ html {
     align-content: center;
     background-color: aqua;
     /* width: 98%; */
-    /* margin-top: 10px;
-    margin-bottom: 10px; */
-    /* margin: auto; */
+    /* margin-top: 10px; */
+    /* margin-bottom: 10px; */
+    margin: auto;
 }
 
 #info {
@@ -42,7 +37,7 @@ html {
     border-radius: 100px;
 }
 
-#whoami:hover, #info:hover {
+#whoami:hover {
     background-color: #4de9b0;
     transform: scale(1.05);
     transition: 0.65s;
@@ -53,7 +48,6 @@ html {
     overflow: hidden;
     margin : 0 0 0 0;
     width: 100%;
-    /* border-color: #333; */
 }
 
 /* Style the links inside the navigation bar */

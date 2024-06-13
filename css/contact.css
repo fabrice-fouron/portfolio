@@ -1,24 +1,7 @@
+
 html {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: rgb(145, 112, 99);
-}
-
-#info {
-    position: relative;
-    margin: 10px auto;
-    font-size: larger;
-    width: 250px;
-    padding: 15px;
-    border: 10px;
-    background-color: rgb(218, 116, 116);
-    border-radius: 5px;
-    font-size: 25px;
-}
-
-#info:hover {
-    background-color: #4de9b0;
-    transform: scale(1.05);
-    transition: 0.65s;
 }
 
 .topnav {
@@ -26,7 +9,6 @@ html {
     overflow: hidden;
     margin : 0 0 0 0;
     width: 100%;
-    /* border-color: #333; */
 }
 
 /* Style the links inside the navigation bar */
