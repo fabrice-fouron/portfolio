@@ -5,14 +5,17 @@ html {
 }
 
 #container {
-    position: relative;
-    /* display: flexbox; */
-    align-content: center;
+    /* position: flex; */
+    display: flex;
+    /* align-content: center; */
     background-color: aqua;
+    align-items: center;
     /* width: 98%; */
     /* margin-top: 10px; */
     /* margin-bottom: 10px; */
-    margin: auto;
+    margin: 50px;
+    height: 75%;
+    max-width: 600px;
 }
 
 #info {
@@ -28,7 +31,7 @@ html {
 }
 
 #whoami {
-    position: relative;
+    /* position: relative; */
     text-align: center;
     padding: 25px;
     background-color: rgb(218, 116, 116);
@@ -36,6 +39,7 @@ html {
     margin: auto;
     border-radius: 100px;
     max-width: 400px;
+
 }
 
 #whoami:hover {
