@@ -5,15 +5,12 @@ html {
 }
 
 #container {
-    /* position: flex; */
     display: flex;
-    /* align-content: center; */
     background-color: aqua;
     align-items: center;
-    /* width: 98%; */
-    /* margin-top: 10px; */
-    /* margin-bottom: 10px; */
-    margin: 50px;
+    width: 98%;
+    margin: auto;
+    margin-top: 50px;
     height: 75%;
     max-width: 600px;
 }
@@ -39,13 +36,12 @@ html {
     margin: auto;
     border-radius: 100px;
     max-width: 400px;
-
 }
 
 #whoami:hover {
     background-color: #4de9b0;
     transform: scale(1.05);
-    transition: 0.65s;
+    transition: 0.35s;
 }
 
 .topnav {
@@ -63,6 +59,7 @@ html {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    /* width: 100%; */
 }
 
 /* Change the color of links on hover */

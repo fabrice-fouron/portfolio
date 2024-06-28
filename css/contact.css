@@ -4,6 +4,33 @@ html {
     background-color: rgb(145, 112, 99);
 }
 
+#box {
+    display: flex;
+    background-color: aqua;
+    /* align-items: center; */
+    /* width: 98%; */
+    margin: auto;
+    margin-top: 50px;
+    height: 50%;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 100px;
+}
+
+ul {
+    /* justify-content: center; */
+    align-items: center;
+    margin: auto;
+    text-align: left;
+    background-color: #04AA6D;
+    padding: 10px;
+}
+
+li {
+    list-style-type: none;
+    margin: 15px;
+}
+
 .topnav {
     background-color: #333;
     overflow: hidden;
