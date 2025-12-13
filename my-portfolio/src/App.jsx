@@ -8,7 +8,7 @@ function App() {
 
   return (
     <h1 className="text-3xl underline">
-      Name: Fabrice Fouron
+      Website under construction
     </h1>
   )
 }
