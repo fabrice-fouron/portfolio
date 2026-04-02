@@ -152,7 +152,7 @@ function NavBar({ active }) {
       </nav> */}
 
       {/* Desktop Right Pane Navbar */}
-      <nav className="hidden lg:flex fixed right-0 top-0 bottom-0 w-160 z-50 flex-col justify-center p-6 bg-zinc-950/80 backdrop-blur-sm ">
+      <nav className="hidden lg:flex fixed right-0 top-0 bottom-0 w-84 z-50 flex-col justify-center p-6 bg-zinc-950/80 backdrop-blur-sm ">
         <ul className="flex flex-col gap-12">
           {links.map((l) => (
             <li key={l}>
