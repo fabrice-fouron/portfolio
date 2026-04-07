@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import resumeEn from "./assets/resume/FABRICE_RESUME_EN.pdf";
 import resumeFr from "./assets/resume/FABRICE_RESUME_FR.pdf";
 
@@ -15,7 +15,7 @@ const DATA = {
     fr: resumeFr,
   },
   about:
-    "I'm a software developer passionate about cloud infrastructure, full-stack web applications, and great developer experience. Currently seeking new opportunities.",
+    "I'm a software developer passionate about technology, sports, and video games. Currently seeking job opportunities in Canada",
 
   education: [
     {
@@ -35,8 +35,20 @@ const DATA = {
       location: "Malden, Massachusetts (USA)",
       stack: ["Python", "Flask", "MySQL"],
       bullets: [
-        "Built X feature that improved Y by Z%.",
-        "Migrated legacy service to serverless architecture.",
+        "Implemented a website for a bakery established in 1916, to go paperless while streamlining the data \
+        entered on production lines, cutting management effort by 50% using Python/Flask/SQL",
+        "Provided IT support to more than 30 employees"
+      ],
+    },
+    {
+      company: "Wentworth Institute of Technology",
+      role: "Computer Science Tutor",
+      period: "September 2024 - December 2024",
+      location: "Boston, Massachusetts (USA)",
+      stack: ["Java"],
+      bullets: [
+        "Met with Computer Science students to go over the material in various courses",
+        "Provided asssistance in developing better approaches in problem solving"
       ],
     },
     {
@@ -46,16 +58,19 @@ const DATA = {
       location: "Boston, Massachusetts (USA)",
       stack: ["Salesforce","Visualforce", "Apex", "Javascript", "SOQL"],
       bullets: [
-        "Automated infrastructure provisioning with Terraform.",
-        "Reduced deployment time by 40%.",
+        "Implemented custom features using Salesforce Apex and LWC that facilitates the use of the home care \
+        software used by more than 30,000 users for a leading provider of home and community-based \
+        specialty health care",
+        "Improved the code coverage of the development and staging environments by 5%",
+        "Collaborated with business analysts daily to meet requirements on various project"
       ],
     },
     {
       company: "HOPES",
-      role: "Application Programming Analyst Intern",
+      role: "Software Developer",
       period: "September 2024 - Now",
       location: "Remote",
-      stack: ["React", "Node.js", "AWS"],
+      stack: ["React", "TailwindCSS", "Node.js", "AWS"],
       bullets: [
         "Implement numerous features course scheduling, calendar, usage tracking, and more",
         "Document all major features and changes made to the platform to accomodate and improve user experience ",
@@ -65,28 +80,28 @@ const DATA = {
 
   projects: [
     {
-      title: "Project 1",
+      title: "TRACKR",
       description:
-        "A full-stack web app that does something cool. Built with React, Node.js, and deployed on AWS.",
-      stack: ["React", "Node.js", "PostgreSQL", "AWS"],
-      github: "https://github.com/you/project-alpha",
+        "A platform for job application management with a recommendation feature based on user preferences.",
+      stack: ["React", "Node.js", "MySQL"],
+      github: "https://github.com/fabrice-fouron/trackr",
       live: null,
     },
     {
-      title: "Project 2",
+      title: "Video Streaming",
       description:
-        "An open-source CLI tool that automates something tedious for developers.",
-      stack: ["Python", "Docker"],
-      github: "https://github.com/you/project-beta",
+        "A video streaming platform for family and friends.",
+      stack: ["React", "Node.js", "PostgreSQL"],
+      github: null,
       live: null,
     },
-    {
-      title: "Project 3",
-      description: "A real-time dashboard built with WebSockets and React.",
-      stack: ["React", "Socket.io", "Redis"],
-      github: "https://github.com/you/project-gamma",
-      live: null,
-    },
+    // {
+    //   title: "Project 3",
+    //   description: "A real-time dashboard built with WebSockets and React.",
+    //   stack: ["React", "Socket.io", "Redis"],
+    //   github: "https://github.com/you/project-gamma",
+    //   live: null,
+    // },
   ],
 };
 
@@ -119,12 +134,12 @@ const IconDocument = () => (
 // ─── COMPONENTS ──────────────────────────────────────────────────────────────
 
 function NavBar({ active }) {
-  const [scrolled, setScrolled] = useState(false);
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  // const [scrolled, setScrolled] = useState(false);
+  // useEffect(() => {
+    // const onScroll = () => setScrolled(window.scrollY > 20);
+  //   window.addEventListener("scroll", onScroll);
+  //   return () => window.removeEventListener("scroll", onScroll);
+  // }, []);
 
   const links = ["about", "experience", "projects", "education", "contact"];
 
