@@ -29,6 +29,31 @@ const DATA = {
 
   experience: [
     {
+      company: "HOPES",
+      role: "Software Developer",
+      period: "September 2024 - Now",
+      location: "Remote",
+      stack: ["React", "TailwindCSS", "Node.js", "AWS"],
+      bullets: [
+        "Implement numerous features course scheduling, calendar, usage tracking, and more",
+        "Document all major features and changes made to the platform to accomodate and improve user experience ",
+      ],
+    },
+    {
+      company: "Sevita Health",
+      role: "Application Programming Analyst Intern",
+      period: "January 2025 - May 2025",
+      location: "Boston, Massachusetts (USA)",
+      stack: ["Salesforce","Visualforce", "Apex", "Javascript", "SOQL"],
+      bullets: [
+        "Implemented custom features using Salesforce Apex and LWC that facilitates the use of the home care \
+        software used by more than 30,000 users for a leading provider of home and community-based \
+        specialty health care",
+        "Improved the code coverage of the development and staging environments by 5%",
+        "Collaborated with business analysts daily to meet requirements on various project"
+      ],
+    },
+    {
       company: "Piantedosi Baking Company",
       role: "Information Technology Intern",
       period: "May 2024 - December 2024",
@@ -49,31 +74,6 @@ const DATA = {
       bullets: [
         "Met with Computer Science students to go over the material in various courses",
         "Provided asssistance in developing better approaches in problem solving"
-      ],
-    },
-    {
-      company: "Sevita Health",
-      role: "Application Programming Analyst Intern",
-      period: "January 2025 - May 2025",
-      location: "Boston, Massachusetts (USA)",
-      stack: ["Salesforce","Visualforce", "Apex", "Javascript", "SOQL"],
-      bullets: [
-        "Implemented custom features using Salesforce Apex and LWC that facilitates the use of the home care \
-        software used by more than 30,000 users for a leading provider of home and community-based \
-        specialty health care",
-        "Improved the code coverage of the development and staging environments by 5%",
-        "Collaborated with business analysts daily to meet requirements on various project"
-      ],
-    },
-    {
-      company: "HOPES",
-      role: "Software Developer",
-      period: "September 2024 - Now",
-      location: "Remote",
-      stack: ["React", "TailwindCSS", "Node.js", "AWS"],
-      bullets: [
-        "Implement numerous features course scheduling, calendar, usage tracking, and more",
-        "Document all major features and changes made to the platform to accomodate and improve user experience ",
       ],
     },
   ],
