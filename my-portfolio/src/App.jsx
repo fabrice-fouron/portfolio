@@ -167,7 +167,7 @@ function NavBar({ active }) {
       </nav> */}
 
       {/* Desktop Right Pane Navbar */}
-      <nav className="hidden lg:flex fixed right-0 top-0 bottom-0 w-84 z-50 flex-col justify-center p-6 bg-zinc-950/80 backdrop-blur-sm ">
+      <nav className="hidden lg:flex fixed right-[max(0px,calc((100vw-90rem)/2))] top-0 bottom-0 w-48 z-50 flex-col justify-center p-6 bg-zinc-950/80 backdrop-blur-sm ">
         <ul className="flex flex-col gap-12">
           {links.map((l) => (
             <li key={l}>
@@ -222,7 +222,7 @@ function Hero() {
   return (
     <section
       id="about"
-      className="min-h-screen flex flex-col justify-center px-6 scroll-mt-20"
+      className="relative min-h-screen flex flex-col justify-center px-6 scroll-mt-20"
     >
       <div className="max-w-5xl mx-auto w-full pt-24">
         {/* Decorative grid */}
@@ -231,6 +231,8 @@ function Hero() {
             backgroundImage:
               "linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)",
             backgroundSize: "60px 60px",
+            maskImage: "radial-gradient(ellipse 60% 60% at 40% 50%, #000 30%, transparent 100%)",
+            WebkitMaskImage: "radial-gradient(ellipse 60% 60% at 40% 50%, #000 30%, transparent 100%)",
           }}
         />
 
@@ -450,7 +452,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="bg-zinc-950 text-white min-h-screen selection:bg-amber-400 selection:text-zinc-950 md:pl-24 lg:pr-48">
+    <div className="bg-zinc-950 text-white min-h-screen selection:bg-amber-400 selection:text-zinc-950 md:pl-24 lg:pr-48 max-w-[90rem] mx-auto">
       <NavBar active={activeSection} />
       <Hero />
       <Experience />
